@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Define theme
+@theme {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #0f0f0f;
+  --color-text-light: #0f0f0f;
+  --color-text-dark: #ffffff;
+  --color-border: #e5e5e5;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+} */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-bg: 255 255 255;
+    --color-text: 0 0 0;
+  }
+
+  .dark {
+    --color-bg: 0 0 0;
+    --color-text: 255 255 255;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))] transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 5s linear infinite;
+  }
+
+  .animate-tilt {
+    animation: tilt 1.8s ease-in-out infinite;
+  }
+
+  .animate-bounce-updown {
+    animation: bounceUpDown 1.5s ease-in-out infinite;
+  }
+
+  .animate-shake {
+    animation: shake 2s ease-in-out infinite;
+  }
+
+  .bounce-on-leave {
+    animation: bounceBack 0.6s ease-out forwards;
+  }
+
+  @keyframes tilt {
+
+    0%,
+    100% {
+      transform: rotate(-5deg);
+    }
+
+    50% {
+      transform: rotate(5deg);
+    }
+  }
+
+  @keyframes bounceUpDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes bounceBack {
+  0%   { transform: scale(1.1) rotate(3deg); }
+  40%  { transform: scale(1.05) rotate(-2deg); }
+  70%  { transform: scale(1.02) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+  @keyframes shake {
+
+    0%,
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    75% {
+      transform: scale(1.1) rotate(-5deg);
+    }
+  }
+
+  .hover-scale-card:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+  }
+}
