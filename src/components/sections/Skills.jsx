@@ -74,27 +74,7 @@ const Skills = () => {
 				},
 			],
 		},
-		{
-			title: "AI/ML",
-			icon: <FaBrain className="w-8 h-8 text-purple-500" />,
-			skills: [
-				{
-					name: "TensorFlow",
-					level: 75,
-					icon: <SiTensorflow className="w-5 h-5 text-orange-500" />,
-				},
-				{
-					name: "PyTorch",
-					level: 70,
-					icon: <div className="text-red-500 font-bold">PT</div>,
-				},
-				{
-					name: "NLP",
-					level: 65,
-					icon: <div className="text-blue-400 font-bold">AI</div>,
-				},
-			],
-		},
+		
 		{
 			title: "Databases",
 			icon: <FaDatabase className="w-8 h-8 text-yellow-500" />,
@@ -113,6 +93,32 @@ const Skills = () => {
 					name: "Firebase",
 					level: 75,
 					icon: <SiFirebase className="w-5 h-5 text-yellow-500" />,
+				},
+			],
+		},
+		
+		
+	];
+
+  const dummyList = [
+		{
+			title: "AI/ML",
+			icon: <FaBrain className="w-8 h-8 text-purple-500" />,
+			skills: [
+				{
+					name: "TensorFlow",
+					level: 75,
+					icon: <SiTensorflow className="w-5 h-5 text-orange-500" />,
+				},
+				{
+					name: "PyTorch",
+					level: 70,
+					icon: <div className="text-red-500 font-bold">PT</div>,
+				},
+				{
+					name: "NLP",
+					level: 65,
+					icon: <div className="text-blue-400 font-bold">AI</div>,
 				},
 			],
 		},
@@ -164,7 +170,7 @@ const Skills = () => {
 				},
 			],
 		},
-	];
+  ];
 
 	return (
 		<section

@@ -15,7 +15,7 @@ import{
 const About = () => (
 	<section
 		id="about"
-		className="py-20 px-4 sm:px-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300"
+		className="py-20 px-4 sm:px-6 dark:bg-gray-900 transition-colors duration-300"
 	>
 		<div className="max-w-6xl mx-auto">
 			{/* Header */}
