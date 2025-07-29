@@ -186,11 +186,6 @@ const Projects = () => {
 								icon: "⏱️",
 							},
 							{
-								name: "Memory Game",
-								tech: "JS, Canvas",
-								icon: "🎮",
-							},
-							{
 								name: "Weather Widget",
 								tech: "API, JS",
 								icon: "⛅",
@@ -199,16 +194,6 @@ const Projects = () => {
 								name: "Drawing App",
 								tech: "Canvas, JS",
 								icon: "🎨",
-							},
-							{
-								name: "Password Generator",
-								tech: "JS, Security",
-								icon: "🔑",
-							},
-							{
-								name: "Unit Converter",
-								tech: "JS, Math",
-								icon: "📏",
 							},
 							{
 								name: "Quiz App",
