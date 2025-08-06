@@ -191,20 +191,10 @@ const Projects = () => {
 								icon: "⛅",
 							},
 							{
-								name: "Drawing App",
-								tech: "Canvas, JS",
-								icon: "🎨",
-							},
-							{
 								name: "Quiz App",
 								tech: "JS, LocalStorage",
 								icon: "❓",
-							},
-							{
-								name: "Expense Tracker",
-								tech: "JS, Charts",
-								icon: "💰",
-							},
+							}
 						].map((project, index) => (
 							<motion.div
 								key={index}
