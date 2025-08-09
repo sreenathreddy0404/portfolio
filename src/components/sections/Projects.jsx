@@ -182,7 +182,7 @@ const Projects = () => {
 						{[
 							{
 								name: "Pomodoro Timer",
-								tech: "JS, CSS",
+								tech: "HTML, JS, CSS",
 								icon: "⏱️",
 							},
 							{
